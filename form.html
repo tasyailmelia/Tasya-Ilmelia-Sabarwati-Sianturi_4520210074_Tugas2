@@ -5,94 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tasya's Personal Website</title>
-</head>
-<body>
-    <form action="results.html" method="GET" enctype="multipart/form-data">
-        <div>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required>
-      </div>
-      <div>
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" required>
-      </div>
-      <div>
-        <label for="age">Age</label>
-        <input type="number" name="age" id="age" min="1" max="200" step="1">
-      </div>
-      <div>
-        <label for="date">Birthdate</label>
-        <input type="date" name="date" id="date" min="2021-23-09">
-      </div>
-      <div>
-        Favorite Food
-        <div>
-          <label for="Pempek">Pempek</label>
-          <input type="checkbox" name="Pempek" id="Pempek">
+<body style="background-color: #ebde20">
+    <form action="results.html" method="GET" enctype="multipart/form-data" >
+      <fieldset style="background-color: rgb(201, 166, 12);">
+        <legend><h1>USER FORM</h1></legend>
+          <table>
+            <tr>
+              <td width="200px">First Name</td>
+              <td><input type="text" name="Name" id="name" placeholder="input your name..."required></td>
+            </tr>
+            <tr>
+              <td>Email</td>
+              <td><input type="text" name="Email" id="email" placeholder="input your email..." required></td>
+            </tr>
+            <tr>
+              <td> No. Telephone </td>
+            <td><input type="text" name="No Telephone" id="no" placeholder="input your telephone..." required></td>
+            </tr>
+            <tr>
+              <td>Password</td>
+              <td><input type="text" name="Password" placeholder="input your password..."required></td>
+            </tr>
+            <tr><td>Gender</td>
+              <td><p><input type="radio" name="Gander" value="Male" /> Male
+              <input type="radio" name="Gender" value="Female" /> Female</p></td>
+            </tr>
+            <tr>
+              <td>Addres</td>
+              <td><textarea id="addres" name="Addres" placeholder="input your addres..."></textarea></td>
+            </tr>
+            <tr>
+              <td>Age</td>
+              <td><p><input type="number" name="Age" id="age" min="1" max="200" step="1" placeholder="input your age..."></p></td>
+            </tr>
+            <tr>
+              <td>Birthdate</td>
+              <td><p><input type="date" name="Birthdate" id="date" min="2021-23-09"></p></td>
+            </tr>
+            <tr>
+                <td>Select Games</td>
+               <td>
+                 <p></p>
+              <input type="checkbox" name="Hockey" id="Hockey">Hockey
+              <input type="checkbox" name="Football" id="Football">Football
+              <input type="checkbox" name="Cricket" id="Football">Cricket
+              <input type="checkbox" name="VolleyBall" id="Football">VolleyBall
+              </td>
+            </tr>
+            <tr>
+              <td>Marital Status</td>
+                <td><p><input type="radio" name="Status" value="Married" /> Married
+                <input type="radio" name="Status" value="Unmarried" /> Unmarried</p></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                <P>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+                </P>
+              </td>
+            </tr>
+            <tr>
+              <td></td>
+              <td>
+                  <input type="checkbox" name="Accept" id="accept">I accept this agrement
+              </td>
+            </tr>
+          </table>
         </div>
-        <div>
-          <label for="Nasi Goreng">Nasi Goreng</label>
-          <input type="checkbox" name="Nasi Goreng" id="Nasi Goreng">
-        </div>
-        <div>
-            <label for="Siomay">Siomay</label>
-            <input type="checkbox" name="Siomay" id="Siomay">
-          </div>
-          <div>
-            <label for="Gudeg">Gudeg</label>
-            <input type="checkbox" name="Gudeg" id="Gudeg">
-          </div>
-      </div>
-      <div>
-        Gender
-        <div>
-          <label for="male">Male</label>
-          <input type="radio" name="gender" id="male" value="male">
-        </div>
-        <div>
-          <label for="female">Female</label>
-          <input type="radio" name="gender" id="female" value="female">
-        </div>
-      </div>
-      <div>
-        <label for="eyeColor">Eye Color</label>
-        <select name="eyeColor" id="eyeColor" multiple>
-          <option value="Green">Green</option>
-          <option label="Red" value="Red"></option>
-          <option label="Yellow" value="Yellow"></option>
-          <option label="Black" value="Black"></option>
-          <option label="Blue" value="Blue"></option>
-        </select>
-      </div>
-      <div>
-        <label for="bio">Bio</label>
-        <textarea id="bio" name="bio"></textarea>
-      </div>
-      <input type="hidden" name="hidden" value="hi">
-      <div>
-        <label for="file">File</label>
-        <input id="file" type="file" name="file">
-      </div>
-      <div>
-        <label for="phone">Phone</label>
-        <input type="tel" name="phone" id="phone">
-      </div>
-      <div>
-        <label for="url">URL</label>
-        <input type="url" name="url" id="url">
-      </div>
-      <div>
-        <label for="color">Color</label>
-        <input type="color" name="color" id="color">
-      </div>
-      <div>
-        <label>
-          Password
-          <input type="password" name="password" required>
-        </label>
-      </div>
-      <button type="reset">Reset</button>
-      <button type="submit">Submit</button>
+        
+      </fieldset>
     </form>
 </body>
 </html>
